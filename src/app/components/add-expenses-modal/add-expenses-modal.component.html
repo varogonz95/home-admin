@@ -1,0 +1,81 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-title>Agregar gastos</ion-title>
+        <ion-buttons slot="end">
+            <ion-button (click)="close()">Cerrar</ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+    <ion-list>
+        <ion-list-header>
+            <ion-label>Información</ion-label>
+        </ion-list-header>
+
+        <ion-item>
+            <ion-label position="stacked">Categoría de gasto</ion-label>
+            <ion-select placeholder="Seleccionar">
+                <ion-select-option value="emergencies">Emergencias</ion-select-option>
+                <ion-select-option value="food">Comida</ion-select-option>
+                <ion-select-option value="other">Otros</ion-select-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-list-header>
+            <ion-label>Detalles</ion-label>
+            <ion-note>
+                <ion-button>
+                    <ion-icon slot="icon-only" name="attach-outline"></ion-icon>
+                </ion-button>
+            </ion-note>
+        </ion-list-header>
+
+        <!-- Put ion-chips here for file attachments -->
+        <!-- ... -->
+        <ion-chip>
+            <ion-label>file__asdasd</ion-label>
+        </ion-chip>
+        <ion-chip>
+            <ion-label>file__asdasd</ion-label>
+        </ion-chip>
+        <ion-chip>
+            <ion-label>file__asdasd</ion-label>
+        </ion-chip>
+
+        <ion-item>
+            <ion-input placeholder="1. Detalle de gasto"></ion-input>
+            <ion-input placeholder="Valor &#8353;"></ion-input>
+            <ion-button color="light">
+                <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+            </ion-button>
+        </ion-item>
+
+        <ion-item>
+            <ion-input placeholder="2. Detalle de gasto"></ion-input>
+            <ion-input placeholder="Valor &#8353;"></ion-input>
+            <ion-button color="light">
+                <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+            </ion-button>
+        </ion-item>
+
+        <ion-item>
+            <ion-input placeholder="3. Detalle de gasto"></ion-input>
+            <ion-input placeholder="Valor &#8353;"></ion-input>
+            <ion-button color="light">
+                <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+            </ion-button>
+        </ion-item>
+    </ion-list>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-buttons slot="primary">
+            <ion-button color="success" (click)="close()">
+                <ion-icon slot="start" name="checkmark-outline"></ion-icon>
+                Aceptar
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-footer>

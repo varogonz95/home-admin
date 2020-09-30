@@ -1,0 +1,56 @@
+<ion-content>
+    <ion-list>
+        <ion-list-header>
+            <ion-label>Miembros del hogar</ion-label>
+            <ion-note>
+                <ion-button size="small" (click)="presentAddMemberModal()">
+                    <ion-icon slot="icon-only" name="add-circle-outline"></ion-icon>
+                </ion-button>
+            </ion-note>
+        </ion-list-header>
+    </ion-list>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title style="white-space: nowrap;">
+                <small>
+                    Alvaro Gonzalez
+                    <span style="font-weight: 100 !important; font-size: smaller;">(agonzalez#1234)</span>
+                </small>
+            </ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-list>
+                <ion-item>
+                    <ion-label>Monto asignado</ion-label>
+                    <ion-note slot="end">&#8353; 150.000</ion-note>
+                </ion-item>
+                
+                <ion-item>
+                    <ion-label>Último aporte</ion-label>
+                    <ion-note slot="end">2020/10/2020</ion-note>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>Último monto</ion-label>
+                    <ion-note slot="end">&#8353; 145.000</ion-note>
+                </ion-item>
+            </ion-list>
+        </ion-card-content>
+
+        <ion-card-content style="margin-top: 0;">
+            <ion-list>
+                <ion-item>
+                    <ion-label>Balance anterior</ion-label>
+                    <ion-note slot="end" color="danger">&#8353; -5.000</ion-note>
+                </ion-item>
+                
+                <ion-item>
+                    <ion-label>Balance actual</ion-label>
+                    <ion-note slot="end" color="danger">&#8353; -155.000</ion-note>
+                </ion-item>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

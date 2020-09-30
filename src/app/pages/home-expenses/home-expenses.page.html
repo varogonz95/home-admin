@@ -1,0 +1,44 @@
+    <ion-segment class="home-expenses-segment" (ionChange)="segmentChanged($event)" [value]="expensesSegment">
+        <ion-segment-button value="myexpenses">
+            <ion-label>Mis gastos</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="monthlysummary">
+            <ion-label>Mensuales</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+
+<ion-content>
+    <ion-list [hidden]="expensesSegment==='monthlysummary'">
+        <ion-list-header>
+            <ion-label>Mis gastos</ion-label>
+            <ion-note>
+                <ion-button size="small" (click)="presentAddExpensesModal()">
+                    <ion-icon slot="icon-only" name="add-circle-outline"></ion-icon>
+                </ion-button>
+            </ion-note>
+        </ion-list-header>
+
+        <ion-item button (click)="presentExpenseDetailsModal()">
+            <ion-label>2020 - Septiembre</ion-label>
+        </ion-item>
+
+        <ion-item button (click)="presentExpenseDetailsModal()">
+            <ion-label>2020 - Octubre</ion-label>
+        </ion-item>
+
+        <ion-item button (click)="presentExpenseDetailsModal()">
+            <ion-label>2020 - Noviembre</ion-label>
+        </ion-item>
+
+        <ion-item button (click)="presentExpenseDetailsModal()">
+            <ion-label>2020 - Diciembre</ion-label>
+        </ion-item>
+    </ion-list>
+
+    <ion-list [hidden]="expensesSegment==='myexpenses'">
+        <ion-list-header>
+            <ion-label>Gastos mensuales</ion-label>
+        </ion-list-header>
+        
+    </ion-list>
+</ion-content>

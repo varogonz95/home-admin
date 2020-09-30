@@ -1,0 +1,9 @@
+:host .home-expenses-segment.ios {
+    max-width: 70%;
+    margin: .5rem auto auto auto;
+    
+    ion-segment-button.ios {
+        height: 22px;
+        min-height: 22px;
+    }
+}
